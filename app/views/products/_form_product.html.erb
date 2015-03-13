@@ -1,0 +1,23 @@
+<%= form_for @product do |product| %>
+
+  <p>
+    <%= product.label :product_name %><br>
+    <%= product.text_field :name %>
+  </p>
+  <p>
+    <%= product.label :product_description %><br>
+    <%= product.text_area :description%>
+  </p>
+  <p>
+    <%= product.label :product_price %><br>
+    <%= product.number_field :price %>
+  </p>
+  <p>
+    <%= product.label :product_published_? %><br>
+    <%= product.check_box :published? %>
+  </p>
+ 
+  <p>
+    <%= product.submit %>
+  </p>
+<% end %>
